@@ -95,6 +95,15 @@
 				gl_FragColor = vec4( color, 1.0 );
 			}
 		</script>
+	  <script>
+	  	fetch("https://www.test.cn").then(function(response) {
+		  return response.json();
+		}).then(function(data) {
+		  console.log(data);
+		}).catch(function(e) {
+		  console.log("Oops, error");
+		});
+	  </script>
   </head>
   <body>
     <!-- Display a message if JS has been disabled on the browser. -->
